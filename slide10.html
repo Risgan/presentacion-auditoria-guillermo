@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 
 <html lang="es">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Conclusión General</title>
-<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;family=Playfair+Display:ital,wght@1,600&amp;display=swap" rel="stylesheet"/>
-<style>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Conclusión General</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;family=Playfair+Display:ital,wght@1,600&amp;display=swap"
+        rel="stylesheet" />
+    <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
@@ -16,6 +19,7 @@
             background-color: #f3f4f6;
             overflow: hidden;
         }
+
         .slide-container {
             width: 1280px;
             height: 720px;
@@ -25,6 +29,7 @@
             position: relative;
             overflow: hidden;
         }
+
         .header-bar {
             height: 60px;
             padding: 0 3rem;
@@ -35,6 +40,7 @@
             border-bottom: 4px solid #1e3a8a;
             flex-shrink: 0;
         }
+
         .content-area {
             flex: 1;
             padding: 0.6rem 3rem;
@@ -44,11 +50,13 @@
             align-content: start;
             overflow: hidden;
         }
+
         .diagnosis-column {
             display: flex;
             flex-direction: column;
             gap: 0.4rem;
         }
+
         .roadmap-column {
             background-color: #f8fafc;
             border-radius: 12px;
@@ -56,22 +64,26 @@
             padding: 0.65rem 1rem;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             position: relative;
         }
+
         .card-diagnosis {
             border-radius: 8px;
             padding: 0.65rem 0.85rem;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
+
         .card-positive {
             background-color: #f0fdf4;
             border-left: 5px solid #22c55e;
             border: 1px solid #bbf7d0;
             border-left-width: 5px;
         }
+
         .card-negative {
             background-color: #fef2f2;
             border-left: 5px solid #ef4444;
@@ -79,17 +91,20 @@
             border-left-width: 5px;
             flex: 1;
         }
+
         .challenge-item {
             display: flex;
             align-items: center;
             background-color: white;
-            margin-bottom: 0.3rem;
+            margin-bottom: 0.7rem;
             padding: 0.35rem 0.75rem;
             border-radius: 8px;
             border: 1px solid #e2e8f0;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.02);
             transition: transform 0.2s;
+            font-size: 30px;
         }
+
         .challenge-number {
             background-color: #1e3a8a;
             color: white;
@@ -104,22 +119,25 @@
             margin-right: 0.75rem;
             flex-shrink: 0;
         }
+
         .signature-area {
             position: absolute;
-            bottom: 52px;
-            right: 48px;
+            bottom: -29px;
+            right: -48px;
             border-top: 1px solid #cbd5e1;
-            padding-top: 0.25rem;
+            padding-top: 0.25px;
             width: 190px;
             text-align: center;
         }
+
         .signature-text {
             font-family: 'Playfair Display', serif;
             font-style: italic;
             font-size: 0.85rem;
             color: #1e3a8a;
-            margin-bottom: 0.05rem;
+            margin-bottom: 0px;
         }
+
         .footer-bar {
             height: 40px;
             background-color: #f3f4f6;
@@ -133,141 +151,156 @@
         }
     </style>
 </head>
+
 <body>
-<div class="slide-container">
-<!-- Header -->
-<header class="header-bar">
-<div>
-<div class="flex items-center gap-3 mb-1">
-<span class="bg-blue-900 text-white text-xs font-bold px-2 py-1 rounded uppercase tracking-wider">Informe Final</span>
-<h1 class="text-3xl font-bold text-gray-800">Conclusión General</h1>
-</div>
-<p class="text-blue-800 font-medium text-sm">Balance 2025 y Hoja de Ruta Estratégica 2026</p>
-</div>
-<div class="flex items-center gap-3 text-blue-900 opacity-80">
-<div class="text-right">
-<p class="font-bold text-sm leading-tight uppercase">Servicios Especializados en<br/>Reproducción Asistida SAS</p>
-<p class="text-xs tracking-widest text-gray-500">AUDITORÍA 2025</p>
-</div>
-<i class="fa-solid fa-signature text-2xl"></i>
-</div>
-</header>
-<!-- Main Content -->
-<main class="content-area">
-<!-- Left Column: Balance 2025 -->
-<div class="diagnosis-column">
-<h2 class="text-xl font-bold text-gray-700 mb-1 flex items-center">
-<i class="fa-solid fa-scale-balanced mr-2 text-gray-500"></i>
+    <div class="slide-container">
+        <!-- Header -->
+        <header class="header-bar">
+            <div>
+                <div class="flex items-center gap-3 mb-1">
+                    <span
+                        class="bg-blue-900 text-white text-xs font-bold px-2 py-1 rounded uppercase tracking-wider">Informe
+                        Final</span>
+                    <h1 class="text-3xl font-bold text-gray-800">Conclusión General</h1>
+                </div>
+                <p class="text-blue-800 font-medium text-sm">Balance 2025 y Hoja de Ruta Estratégica 2026</p>
+            </div>
+            <div class="flex items-center gap-3 text-blue-900 opacity-80">
+                <div class="text-right">
+                    <p class="font-bold text-sm leading-tight uppercase">Servicios Especializados en<br />Reproducción
+                        Asistida SAS</p>
+                    <p class="text-xs tracking-widest text-gray-500">AUDITORÍA 2025</p>
+                </div>
+                <i class="fa-solid fa-signature text-2xl"></i>
+            </div>
+        </header>
+        <!-- Main Content -->
+        <main class="content-area">
+            <!-- Left Column: Balance 2025 -->
+            <div class="diagnosis-column">
+                <h2 class="text-2xl font-bold text-gray-700 mb-1 flex items-center">
+                    <i class="fa-solid fa-scale-balanced mr-2 text-gray-500"></i>
                     Balance del Ejercicio 2025
                 </h2>
-<!-- Positive -->
-<div class="card-diagnosis card-positive">
-<div class="flex items-center gap-2 mb-2">
-<i class="fa-solid fa-arrow-trend-up text-green-600"></i>
-<h3 class="font-bold text-green-800 text-sm uppercase">Logros Operativos</h3>
-</div>
-<ul class="space-y-2">
-<li class="flex items-start gap-2">
-<i class="fa-solid fa-check text-green-500 text-xs mt-1"></i>
-<p class="text-sm text-gray-700 leading-tight">Crecimiento comercial sostenido en ingresos.</p>
-</li>
-<li class="flex items-start gap-2">
-<i class="fa-solid fa-check text-green-500 text-xs mt-1"></i>
-<p class="text-sm text-gray-700 leading-tight">Mejora operativa tangible frente a ejercicios anteriores.</p>
-</li>
-</ul>
-</div>
-<!-- Negative -->
-<div class="card-diagnosis card-negative">
-<div class="flex items-center gap-2 mb-3">
-<i class="fa-solid fa-triangle-exclamation text-red-600 text-xl"></i>
-<h3 class="font-bold text-red-800 uppercase">Alertas Críticas</h3>
-</div>
-<ul class="space-y-3">
-<li class="flex items-start gap-2">
-<i class="fa-solid fa-xmark text-red-500 mt-1"></i>
-<p class="text-base text-gray-700 leading-snug">Persistencia de <strong>debilidades estructurales</strong> en control de inventarios y sistemas de información.</p>
-</li>
-<li class="flex items-start gap-2">
-<i class="fa-solid fa-xmark text-red-500 mt-1"></i>
-<p class="text-base text-gray-700 leading-snug"><strong>Incertidumbre material</strong> respecto a la recuperación patrimonial en el mediano plazo.</p>
-</li>
-</ul>
-</div>
-</div>
-<!-- Right Column: Roadmap 2026 -->
-<div class="roadmap-column">
-<div class="flex justify-between items-end mb-2">
-<div>
-<h2 class="text-2xl font-bold text-blue-900">Retos Estratégicos 2026</h2>
-<p class="text-sm text-gray-500 mt-1">El enfoque principal <strong>no es el crecimiento en ventas</strong>, sino la reestructuración de fondo:</p>
-</div>
-<i class="fa-solid fa-compass text-4xl text-blue-100"></i>
-</div>
-<div class="flex-1">
-<!-- Item 1 -->
-<div class="challenge-item border-l-4 border-l-blue-600">
-<div class="challenge-number">1</div>
-<div class="flex-1">
-<p class="text-sm font-bold text-gray-800">Transformación Tecnológica (ERP)</p>
-<p class="text-xs text-gray-500">Evaluar migración a software especializado en salud. El sistema actual (&gt;10 años) presenta obsolescencia funcional.</p>
-</div>
-<i class="fa-solid fa-microchip text-blue-300 ml-2"></i>
-</div>
-<!-- Item 2 -->
-<div class="challenge-item">
-<div class="challenge-number">2</div>
-<div class="flex-1">
-<p class="text-sm font-bold text-gray-800">Fortalecer Control Interno</p>
-<p class="text-xs text-gray-500">Cerrar brechas en ciclos de compras, inventarios y tesorería.</p>
-</div>
-<i class="fa-solid fa-shield-halved text-gray-300 ml-2"></i>
-</div>
-<!-- Item 3 -->
-<div class="challenge-item">
-<div class="challenge-number">3</div>
-<div class="flex-1">
-<p class="text-sm font-bold text-gray-800">Optimizar Estructura de Costos</p>
-<p class="text-xs text-gray-500">Eficiencia operativa para mejorar márgenes y flujo de caja.</p>
-</div>
-<i class="fa-solid fa-chart-pie text-gray-300 ml-2"></i>
-</div>
-<!-- Item 4 -->
-<div class="challenge-item">
-<div class="challenge-number">4</div>
-<div class="flex-1">
-<p class="text-sm font-bold text-gray-800">Restablecer Equilibrio Patrimonial</p>
-<p class="text-xs text-gray-500">Plan de capitalización o utilidades retenidas para revertir patrimonio negativo.</p>
-</div>
-<i class="fa-solid fa-scale-unbalanced text-gray-300 ml-2"></i>
-</div>
-<!-- Item 5 -->
-<div class="challenge-item">
-<div class="challenge-number">5</div>
-<div class="flex-1">
-<p class="text-sm font-bold text-gray-800">Reducir Exposición Regulatoria</p>
-<p class="text-xs text-gray-500">Cumplimiento estricto de RIPS, Facturación Electrónica y Habeas Data.</p>
-</div>
-<i class="fa-solid fa-file-contract text-gray-300 ml-2"></i>
-</div>
-</div>
-<!-- Signature -->
-<div class="signature-area">
-<p class="signature-text">Guillermo A. Celemín Chacón</p>
-<p class="text-xs font-bold text-gray-600 uppercase tracking-widest">Revisor Fiscal</p>
-<p class="text-xs text-gray-400 mt-1">MP.33358-T</p>
-</div>
-</div>
-</main>
-<!-- Footer -->
-<footer class="footer-bar">
-<p>Informe Revisoría Fiscal 2025</p>
-<div class="flex items-center gap-2">
-<i class="fa-solid fa-circle-check text-blue-900"></i>
-<span class="font-bold text-blue-900">Cierre del Informe</span>
-<span class="ml-4 font-mono">Página 10</span>
-</div>
-</footer>
-</div>
+                <!-- Positive -->
+                <div class="card-diagnosis card-positive">
+                    <div class="flex items-center gap-2 mb-2">
+                        <i class="fa-solid fa-arrow-trend-up text-green-600"></i>
+                        <h3 class="font-bold text-green-800 text-xl uppercase">Logros Operativos</h3>
+                    </div>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-500 text-xs mt-1"></i>
+                            <p class="text-xl text-gray-700 leading-tight">Crecimiento comercial sostenido en ingresos.
+                            </p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-check text-green-500 text-xs mt-1"></i>
+                            <p class="text-xl text-gray-700 leading-tight">Mejora operativa tangible frente a ejercicios
+                                anteriores.</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Negative -->
+                <div class="card-diagnosis card-negative">
+                    <div class="flex items-center gap-2 mb-3">
+                        <i class="fa-solid fa-triangle-exclamation text-red-600 text-xl"></i>
+                        <h3 class="font-bold text-red-800 uppercase">Alertas Críticas</h3>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-xmark text-red-500 mt-1"></i>
+                            <p class="text-xl text-gray-700 leading-snug">Persistencia de <strong>debilidades
+                                    estructurales</strong> en control de inventarios y sistemas de información.</p>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fa-solid fa-xmark text-red-500 mt-1"></i>
+                            <p class="text-xl text-gray-700 leading-snug"><strong>Incertidumbre material</strong>
+                                respecto a la recuperación patrimonial en el mediano plazo.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Right Column: Roadmap 2026 -->
+            <div class="roadmap-column">
+                <div class="flex justify-between items-end mb-2">
+                    <div>
+                        <h2 class="text-3xl font-bold text-blue-900">Retos Estratégicos 2026</h2>
+                        <p class="text-lg text-gray-500 mt-1">El enfoque principal <strong>no es el crecimiento en
+                                ventas</strong>, sino la reestructuración de fondo:</p>
+                    </div>
+                    <i class="fa-solid fa-compass text-4xl text-blue-100"></i>
+                </div>
+                <div>
+                    <!-- Item 1 -->
+                    <div class="challenge-item border-l-4 border-l-blue-600">
+                        <div class="challenge-number">1</div>
+                        <div class="flex-1">
+                            <p class="text-xl font-bold text-gray-800">Transformación Tecnológica (ERP)</p>
+                            <p class="text-lg text-gray-500">Evaluar migración a software especializado en salud. El
+                                sistema actual (&gt;10 años) presenta obsolescencia funcional.</p>
+                        </div>
+                        <i class="fa-solid fa-microchip text-blue-300 ml-2"></i>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="challenge-item">
+                        <div class="challenge-number">2</div>
+                        <div class="flex-1">
+                            <p class="text-xl font-bold text-gray-800">Fortalecer Control Interno</p>
+                            <p class="text-lg text-gray-500">Cerrar brechas en ciclos de compras, inventarios y
+                                tesorería.</p>
+                        </div>
+                        <i class="fa-solid fa-shield-halved text-gray-300 ml-2"></i>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="challenge-item">
+                        <div class="challenge-number">3</div>
+                        <div class="flex-1">
+                            <p class="text-xl font-bold text-gray-800">Optimizar Estructura de Costos</p>
+                            <p class="text-lg text-gray-500">Eficiencia operativa para mejorar márgenes y flujo de caja.
+                            </p>
+                        </div>
+                        <i class="fa-solid fa-chart-pie text-gray-300 ml-2"></i>
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="challenge-item">
+                        <div class="challenge-number">4</div>
+                        <div class="flex-1">
+                            <p class="text-xl font-bold text-gray-800">Restablecer Equilibrio Patrimonial</p>
+                            <p class="text-lg text-gray-500">Plan de capitalización o utilidades retenidas para revertir
+                                patrimonio negativo.</p>
+                        </div>
+                        <i class="fa-solid fa-scale-unbalanced text-gray-300 ml-2"></i>
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="challenge-item">
+                        <div class="challenge-number">5</div>
+                        <div class="flex-1">
+                            <p class="text-xl font-bold text-gray-800">Reducir Exposición Regulatoria</p>
+                            <p class="text-lg text-gray-500">Cumplimiento estricto de RIPS, Facturación Electrónica y
+                                Habeas Data.</p>
+                        </div>
+                        <i class="fa-solid fa-file-contract text-gray-300 ml-2"></i>
+                    </div>
+                </div>
+                <!-- Signature -->
+                <div class="signature-area">
+                    <p class="signature-text">Guillermo A. Celemín Chacón</p>
+                    <p class="text-xs font-bold text-gray-600 uppercase tracking-widest">Revisor Fiscal</p>
+                    <p class="text-xs text-gray-400 mt-1">MP.33358-T</p>
+                </div>
+            </div>
+        </main>
+        <!-- Footer -->
+        <footer class="footer-bar">
+            <p>Informe Revisoría Fiscal 2025</p>
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-blue-900"></i>
+                <span class="font-bold text-blue-900">Cierre del Informe</span>
+                <span class="ml-4 font-mono">Página 10</span>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
