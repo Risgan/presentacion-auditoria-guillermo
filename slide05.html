@@ -174,60 +174,60 @@
                         Evidencia de Auditoría
                     </h2>
 <p class="text-gray-600 mb-4 leading-relaxed text-sm">
-                        El sistema HELISA no genera automáticamente el formato JSON para RIPS, forzando digitación manual con alto riesgo de error. Existe un vacío estructural tecnológico que limita el cumplimiento de requerimientos del Ministerio de Salud.
+                        HELISA genera la factura electrónica y la envía a la DIAN. Sin embargo, una vez emitida, el sistema <strong>no contiene los campos adicionales</strong> que el Ministerio de Salud exige en el reporte RIPS. Para cumplir con ese reporte, el proveedor externo habilita su propia plataforma y el personal de la empresa debe ingresar nuevamente <strong>de forma manual</strong> la información de cada factura, completando los campos faltantes que incluyen <strong>datos sensibles de las historias clínicas de los pacientes</strong>. Se trata de dos procesos totalmente independientes, sin ninguna conexión automática entre ellos.
                     </p>
 <div class="grid grid-cols-3 gap-3 mt-2">
 <div class="data-point">
-<i class="fa-solid fa-file-code text-red-400 mb-2 text-xl"></i>
-<p class="text-xs text-gray-500 uppercase font-bold mb-1">Generación RIPS</p>
-<p class="highlight-figure text-lg">Manual</p>
-<p class="text-xs text-red-500 mt-1">Sin JSON Automático</p>
+<i class="fa-solid fa-file-invoice text-red-400 mb-2 text-xl"></i>
+<p class="text-xs text-gray-500 uppercase font-bold mb-1">① Factura → DIAN</p>
+<p class="highlight-figure text-lg">Campos Faltantes</p>
+<p class="text-xs text-red-500 mt-1">HELISA no incluye lo que pide MinSalud</p>
 </div>
 <div class="data-point">
-<i class="fa-solid fa-file-contract text-red-400 mb-2 text-xl"></i>
-<p class="text-xs text-gray-500 uppercase font-bold mb-1">Proveedor Externo</p>
-<p class="highlight-figure text-lg">Sin Contrato</p>
-<p class="text-xs text-red-500 mt-1">Solo Propuesta</p>
+<i class="fa-solid fa-hand-pointer text-red-400 mb-2 text-xl"></i>
+<p class="text-xs text-gray-500 uppercase font-bold mb-1">② Re-digitación Manual</p>
+<p class="highlight-figure text-lg">100% a Mano</p>
+<p class="text-xs text-red-500 mt-1">Personal re-ingresa dato por dato</p>
 </div>
 <div class="data-point">
-<i class="fa-solid fa-bolt text-red-400 mb-2 text-xl"></i>
-<p class="text-xs text-gray-500 uppercase font-bold mb-1">Facturación DIAN</p>
-<p class="highlight-figure text-lg">Desconectada</p>
-<p class="text-xs text-red-500 mt-1">Riesgo Incongruencia</p>
+<i class="fa-solid fa-link-slash text-red-400 mb-2 text-xl"></i>
+<p class="text-xs text-gray-500 uppercase font-bold mb-1">③ Sin Conexión</p>
+<p class="highlight-figure text-lg">2 Sistemas</p>
+<p class="text-xs text-red-500 mt-1">Independientes · Alto riesgo de error</p>
 </div>
 </div>
 </div>
 <!-- Impacts -->
 <div>
-<h3 class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-2 pl-1">Riesgos Relevantes</h3>
+<h3 class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-2 pl-1">¿Qué puede salir mal?</h3>
 <div class="impact-grid">
 <div class="impact-card">
 <div class="flex items-center gap-2">
 <div class="icon-circle"><i class="fa-solid fa-gavel"></i></div>
 <p class="font-bold text-sm text-gray-800">Sanciones MinSalud</p>
 </div>
-<p class="text-xs text-gray-600">Incumplimiento de normativa de reporte obligatoria.</p>
+<p class="text-xs text-gray-600">Reportes incorrectos o tardíos pueden derivar en sanciones del Ministerio de Salud.</p>
 </div>
 <div class="impact-card">
 <div class="flex items-center gap-2">
 <div class="icon-circle"><i class="fa-solid fa-user-lock"></i></div>
-<p class="font-bold text-sm text-gray-800">Riesgo Legal Datos</p>
+<p class="font-bold text-sm text-gray-800">Riesgo Legal — Historias Clínicas</p>
 </div>
-<p class="text-xs text-gray-600">Exposición Ley 1581 (Habeas Data) por falta de clausulas de confidencialidad.</p>
+<p class="text-xs text-gray-600">Las historias clínicas se entregan a un tercero sin contrato ni cláusulas de confidencialidad (Ley 1581).</p>
 </div>
 <div class="impact-card">
 <div class="flex items-center gap-2">
 <div class="icon-circle"><i class="fa-solid fa-file-circle-xmark"></i></div>
-<p class="font-bold text-sm text-gray-800">Debilidad Control</p>
+<p class="font-bold text-sm text-gray-800">Inconsistencias en Datos</p>
 </div>
-<p class="text-xs text-gray-600">Falta de integridad en información regulatoria sensible.</p>
+<p class="text-xs text-gray-600">Al digitar dos veces el mismo dato, los reportes pueden no coincidir entre sí, generando inconsistencias.</p>
 </div>
 <div class="impact-card">
 <div class="flex items-center gap-2">
 <div class="icon-circle"><i class="fa-solid fa-building-circle-exclamation"></i></div>
 <p class="font-bold text-sm text-gray-800">Riesgo Reputacional</p>
 </div>
-<p class="text-xs text-gray-600">Impacto negativo por manejo inadecuado de historias clínicas.</p>
+<p class="text-xs text-gray-600">El manejo inadecuado de información clínica sensible afecta la credibilidad de la institución.</p>
 </div>
 </div>
 </div>
@@ -242,20 +242,20 @@
 <h3 class="text-lg font-bold text-green-800">Recomendaciones</h3>
 </div>
 <p class="text-sm text-green-900 font-medium mb-6">
-                        Se requiere una intervención tecnológica inmediata para blindar legal y operativamente a la compañía.
+                        Se requiere actuar de inmediato para que el sistema genere el reporte completo de forma automática, sin depender de la digitación manual del personal.
                     </p>
 <div class="space-y-5 flex-1">
 <div class="flex items-start gap-3">
 <div class="w-6 h-6 rounded-full bg-green-200 text-green-700 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">1</div>
-<p class="text-sm text-gray-700 leading-tight">Implementar <strong>integración automática</strong> para RIPS o evaluar migración a un <strong>ERP especializado</strong> en salud.</p>
+<p class="text-sm text-gray-700 leading-tight">Gestionar con los proveedores de HElisa que el sistema genere automáticamente el reporte RIPS completo, o evaluar un <strong>software especializado en salud</strong> que integre facturación y reportes en un solo proceso.</p>
 </div>
 <div class="flex items-start gap-3">
 <div class="w-6 h-6 rounded-full bg-green-200 text-green-700 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">2</div>
-<p class="text-sm text-gray-700 leading-tight"><strong>Formalizar contrato</strong> con el proveedor tecnológico incluyendo cláusulas de confidencialidad y protección de datos.</p>
+<p class="text-sm text-gray-700 leading-tight"><strong>Firmar un contrato formal</strong> con la plataforma externa que hoy maneja las historias clínicas, incluyendo cláusulas de confidencialidad y protección de datos del paciente.</p>
 </div>
 <div class="flex items-start gap-3">
 <div class="w-6 h-6 rounded-full bg-green-200 text-green-700 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">3</div>
-<p class="text-sm text-gray-700 leading-tight">Establecer controles de <strong>conciliación periódica</strong> (Facturación vs Reportes y XML vs JSON).</p>
+<p class="text-sm text-gray-700 leading-tight">Establecer una <strong>verificación mensual</strong> que compare los datos de la factura enviada a la DIAN con los reportes enviados al Ministerio de Salud, garantizando que coincidan.</p>
 </div>
 </div>
 </div>
