@@ -26,7 +26,7 @@
             overflow: hidden;
         }
         .header-bar {
-            height: 100px;
+            height: 80px;
             padding: 0 3rem;
             display: flex;
             align-items: center;
@@ -42,26 +42,26 @@
         }
         .content-area {
             flex: 1;
-            padding: 2rem 3rem;
+            padding: 1rem 3rem;
             display: flex;
-            gap: 2rem;
+            gap: 1.5rem;
         }
         .col-left {
             width: 40%;
             display: flex;
             flex-direction: column;
-            gap: 1.5rem;
+            gap: 0.6rem;
         }
         .col-right {
             width: 60%;
             display: flex;
             flex-direction: column;
-            gap: 1.5rem;
+            gap: 0.75rem;
         }
         .kpi-card {
             background: white;
-            border-radius: 12px;
-            padding: 1.5rem;
+            border-radius: 10px;
+            padding: 0.85rem 1rem;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
             border-left: 6px solid #e5e7eb;
             display: flex;
@@ -83,17 +83,17 @@
         }
         .risk-map-container {
             background-color: #f8fafc;
-            border-radius: 16px;
-            padding: 2rem;
+            border-radius: 12px;
+            padding: 1rem 1.25rem;
             border: 1px solid #e2e8f0;
             flex: 1;
         }
         .risk-item {
             display: flex;
             align-items: center;
-            margin-bottom: 1.25rem;
+            margin-bottom: 0.45rem;
             background: white;
-            padding: 1rem;
+            padding: 0.55rem 0.85rem;
             border-radius: 8px;
             box-shadow: 0 1px 2px rgba(0,0,0,0.05);
         }
@@ -208,15 +208,15 @@
 <!-- Right Column: Operational Context & Risk Map -->
 <div class="col-right">
 <!-- Context Section -->
-<div class="bg-blue-50 p-6 rounded-xl border border-blue-100 mb-2">
-<h3 class="text-blue-900 font-bold mb-3 flex items-center">
+<div class="bg-blue-50 rounded-xl border border-blue-100" style="padding:0.85rem 1.25rem; margin-bottom:0.5rem;">
+<h3 class="text-blue-900 font-bold flex items-center" style="margin-bottom:0.5rem;">
 <i class="fa-solid fa-circle-info mr-2"></i>Contexto Operativo &amp; Tecnológico
                     </h3>
-<p class="text-gray-700 text-sm leading-relaxed mb-3">
-                        La Compañía mantiene <strong>indicadores financieros negativos</strong> a nivel patrimonial y de resultados acumulados. No obstante, el crecimiento sostenido de ingresos en el último ejercicio la ha acercado a su <strong>punto de equilibrio operativo</strong>, aunque la carga de pérdidas históricas preserva el esquema de riesgo crítico.
+<p class="text-gray-700 text-sm leading-relaxed" style="margin-bottom:0.4rem;">
+                        La Compañía mantiene <strong>indicadores financieros negativos</strong> a nivel patrimonial y de resultados acumulados; el crecimiento de ingresos en 2025 la acerca al <strong>punto de equilibrio operativo</strong>, aunque la carga histórica de pérdidas preserva el esquema de riesgo crítico.
                     </p>
 <p class="text-gray-700 text-sm leading-relaxed">
-                        Se evidencia una <strong>mejora en el EBITDA</strong>, impulsada por la depreciación de activos que genera recursos internos disponibles para tesorería, fortaleciendo la capacidad de maniobra operativa. El ERP vigente con <strong>más de 10 años de operación</strong> representa una obsolescencia funcional que limita el cumplimiento regulatorio (RIPS/Facturación). Se suma la <strong>ausencia de controles informáticos</strong> que obliguen a respetar el flujo logístico del módulo: actualmente es posible registrar movimientos directamente desde contabilidad, eludiendo los controles de almacén, compras y consumo, lo que compromete la integridad y trazabilidad de la información.
+                        La <strong>mejora en el EBITDA</strong> obedece a la depreciación de activos, que libera recursos para tesorería y fortalece la maniobra operativa. El ERP —con <strong>más de 10 años de operación</strong>— presenta obsolescencia funcional y <strong>ausencia de controles informáticos</strong> que garanticen el flujo logístico del módulo, permitiendo registros directos desde contabilidad que eluden los controles de almacén y comprometen la trazabilidad.
                     </p>
 </div>
 <!-- Visual Risk Map -->
