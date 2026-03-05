@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hallazgo V: Activos Fijos</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            overflow: hidden;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .header-bar {
+            height: 90px;
+            padding: 0 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            border-bottom: 4px solid #f59e0b; /* Yellow for Medium Risk */
+            flex-shrink: 0;
+        }
+        .content-area {
+            flex: 1;
+            padding: 2rem 3rem;
+            display: flex;
+            gap: 2rem;
+            position: relative;
+        }
+        .main-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .side-column {
+            width: 380px;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .finding-box {
+            background-color: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            position: relative;
+            border-left: 6px solid #f59e0b;
+        }
+        .highlight-figure {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #d97706;
+        }
+        .impact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        .impact-card {
+            background-color: #fffbeb;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid #fde68a;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .recommendation-box {
+            background-color: #ecfdf5; /* Green tint for solution */
+            border: 1px solid #6ee7b7;
+            border-radius: 12px;
+            padding: 1.5rem;
+            height: 100%;
+        }
+        .risk-badge-large {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #fef3c7;
+            color: #b45309;
+            padding: 0.5rem 1.5rem;
+            border-bottom-left-radius: 12px;
+            border-top-right-radius: 12px; /* Matches container */
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            border-left: 1px solid #fde68a;
+            border-bottom: 1px solid #fde68a;
+        }
+        .icon-circle {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            color: #d97706;
+            font-size: 0.9rem;
+            border: 1px solid #fcd34d;
+        }
+        .footer-bar {
+            height: 40px;
+            background-color: #f3f4f6;
+            display: flex;
+            align-items: center;
+            padding: 0 3rem;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            color: #6b7280;
+            border-top: 1px solid #e5e7eb;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Header -->
+<header class="header-bar">
+<div>
+<div class="flex items-center gap-3 mb-1">
+<span class="bg-yellow-500 text-white text-xs font-bold px-2 py-1 rounded uppercase tracking-wider">Hallazgo V</span>
+<h1 class="text-3xl font-bold text-gray-800">Activos Fijos</h1>
+</div>
+<p class="text-yellow-600 font-medium text-sm">Diferencias en conciliación contable vs. módulo de activos</p>
+</div>
+<div class="flex items-center gap-3 text-blue-900 opacity-80">
+<div class="text-right">
+<p class="font-bold text-sm leading-tight uppercase">Servicios Especializados en<br/>Reproducción Asistida SAS</p>
+<p class="text-xs tracking-widest text-gray-500">AUDITORÍA 2025</p>
+</div>
+<i class="fa-solid fa-cubes-stacked text-2xl text-yellow-500"></i>
+</div>
+</header>
+<!-- Main Content -->
+<main class="content-area">
+<div class="main-column">
+<!-- Finding Description -->
+<div class="finding-box">
+<div class="risk-badge-large">Riesgo Medio</div>
+<h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+<i class="fa-solid fa-scale-unbalanced-flip text-yellow-500 mr-3"></i>
+                        Evidencia de Auditoría
+                    </h2>
+<p class="text-gray-600 mb-4 leading-relaxed">
+                        Se presentaron diferencias entre contabilidad y módulo de activos por: <strong>$104 millones en costo</strong> y <strong>$51,7 millones en depreciación acumulada</strong>. Aunque corregidas, estas diferencias evidencian fragilidad en la integración del sistema (Helisa).
+                    </p>
+<div class="grid grid-cols-3 gap-4 mt-6">
+<div class="text-center p-3 bg-gray-50 rounded-lg border border-gray-100">
+<p class="text-xs text-gray-500 uppercase font-bold mb-1">Diferencia en Costo</p>
+<p class="highlight-figure">$104 M</p>
+</div>
+<div class="text-center p-3 bg-gray-50 rounded-lg border border-gray-100">
+<p class="text-xs text-gray-500 uppercase font-bold mb-1">Dif. Depreciación</p>
+<p class="highlight-figure">$51,7 M</p>
+</div>
+<div class="text-center p-3 bg-gray-50 rounded-lg border border-gray-100">
+<p class="text-xs text-gray-500 uppercase font-bold mb-1">Sistema Afectado</p>
+<p class="text-lg font-bold text-gray-700 mt-2 leading-tight">HELISA</p>
+</div>
+</div>
+</div>
+<!-- Impacts -->
+<div>
+<h3 class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-3 pl-1">Impacto Gerencial</h3>
+<div class="impact-grid">
+<div class="impact-card">
+<div class="flex items-center gap-2">
+<div class="icon-circle"><i class="fa-solid fa-network-wired"></i></div>
+<p class="font-bold text-sm text-gray-800">Debilidad en Integración</p>
+</div>
+<p class="text-xs text-gray-600">Fragilidad en la comunicación entre contabilidad y el módulo de activos.</p>
+</div>
+<div class="impact-card">
+<div class="flex items-center gap-2">
+<div class="icon-circle"><i class="fa-solid fa-rotate-left"></i></div>
+<p class="font-bold text-sm text-gray-800">Riesgo de Errores Futuros</p>
+</div>
+<p class="text-xs text-gray-600">Alta probabilidad de recurrencia en inconsistencias de registro.</p>
+</div>
+<div class="impact-card">
+<div class="flex items-center gap-2">
+<div class="icon-circle"><i class="fa-solid fa-file-invoice"></i></div>
+<p class="font-bold text-sm text-gray-800">Fiabilidad de Saldos</p>
+</div>
+<p class="text-xs text-gray-600">Incertidumbre temporal sobre la realidad económica de los activos fijos.</p>
+</div>
+<div class="impact-card">
+<div class="flex items-center gap-2">
+<div class="icon-circle"><i class="fa-solid fa-gear"></i></div>
+<p class="font-bold text-sm text-gray-800">Gestión Manual</p>
+</div>
+<p class="text-xs text-gray-600">Dependencia de ajustes manuales fuera del módulo.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Recommendation Column -->
+<div class="side-column">
+<div class="recommendation-box flex flex-col">
+<div class="flex items-center gap-3 mb-4 border-b border-green-200 pb-3">
+<div class="w-10 h-10 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-lg">
+<i class="fa-solid fa-check-double"></i>
+</div>
+<h3 class="text-lg font-bold text-green-800">Recomendación Estratégica</h3>
+</div>
+<p class="text-sm text-green-900 font-medium mb-6">
+                        Conciliaciones mensuales obligatorias y restricción de ajustes fuera del módulo de activos o desde contabilidad.
+                    </p>
+<div class="space-y-4 flex-1">
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-green-200 text-green-700 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">1</div>
+<p class="text-sm text-gray-700">Implementar <strong>conciliaciones mensuales obligatorias</strong>.</p>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-green-200 text-green-700 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">2</div>
+<p class="text-sm text-gray-700">Restringir totalmente los <strong>ajustes</strong> fuera del módulo de activos.</p>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-green-200 text-green-700 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">3</div>
+<p class="text-sm text-gray-700">Asegurar que <strong>todo movimiento</strong> se registre exclusivamente desde el módulo.</p>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-green-200">
+<p class="text-xs font-bold text-green-700 uppercase mb-2">Meta de Control</p>
+<div class="w-full bg-green-200 rounded-full h-2">
+<div class="bg-green-500 h-2 rounded-full" style="width: 100%"></div>
+</div>
+<p class="text-xs text-green-600 mt-1 text-right">Diferencia $0</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer-bar">
+<p>Informe Revisoría Fiscal 2025</p>
+<div class="flex items-center gap-2">
+<i class="fa-solid fa-circle-exclamation text-yellow-500"></i>
+<span class="font-medium text-yellow-600">Riesgo Medio</span>
+<span class="ml-4 font-mono">Página 8</span>
+</div>
+</footer>
+</div>
+</body>
+</html>

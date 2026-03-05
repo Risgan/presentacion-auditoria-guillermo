@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hallazgo IV: Inventarios - Exámenes de Laboratorio</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            overflow: hidden;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        /* High Risk Red Theme */
+        .header-bar {
+            height: 90px;
+            padding: 0 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            border-bottom: 4px solid #ef4444; /* Red for High Risk */
+            flex-shrink: 0;
+        }
+        .content-area {
+            flex: 1;
+            padding: 2rem 3rem;
+            display: flex;
+            gap: 2rem;
+            position: relative;
+        }
+        .main-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+        .side-column {
+            width: 380px;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .finding-box {
+            background-color: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 1.25rem 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            position: relative;
+            border-left: 6px solid #ef4444; /* Red Border */
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .highlight-figure {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #dc2626; /* Darker Red Text */
+        }
+        .impact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.75rem;
+        }
+        .impact-card {
+            background-color: #fef2f2; /* Light Red BG */
+            padding: 0.75rem;
+            border-radius: 8px;
+            border: 1px solid #fecaca;
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+        .recommendation-box {
+            background-color: #f0fdf4; /* Green tint for solution */
+            border: 1px solid #86efac;
+            border-radius: 12px;
+            padding: 1.5rem;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        .risk-badge-large {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #fee2e2;
+            color: #991b1b;
+            padding: 0.5rem 1.5rem;
+            border-bottom-left-radius: 12px;
+            border-top-right-radius: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            border-left: 1px solid #fecaca;
+            border-bottom: 1px solid #fecaca;
+        }
+        .icon-circle {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            color: #dc2626;
+            font-size: 0.8rem;
+            border: 1px solid #fecaca;
+        }
+        .footer-bar {
+            height: 40px;
+            background-color: #f3f4f6;
+            display: flex;
+            align-items: center;
+            padding: 0 3rem;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            color: #6b7280;
+            border-top: 1px solid #e5e7eb;
+        }
+        .data-point {
+            background-color: #fff;
+            border: 1px solid #fee2e2;
+            border-radius: 8px;
+            padding: 0.75rem;
+            text-align: center;
+        }
+        .context-text {
+            font-size: 0.85rem;
+            line-height: 1.4;
+            color: #4b5563;
+            background-color: #f9fafb;
+            padding: 0.75rem;
+            border-radius: 6px;
+            border-left: 3px solid #9ca3af;
+            margin-bottom: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Header -->
+<header class="header-bar">
+<div>
+<div class="flex items-center gap-3 mb-1">
+<span class="bg-red-600 text-white text-xs font-bold px-2 py-1 rounded uppercase tracking-wider">Hallazgo IV</span>
+<h1 class="text-3xl font-bold text-gray-800">Inventarios - Laboratorio</h1>
+</div>
+<p class="text-red-600 font-medium text-sm">Debilidades en conciliación técnica y naturaleza contable</p>
+</div>
+<div class="flex items-center gap-3 text-blue-900 opacity-80">
+<div class="text-right">
+<p class="font-bold text-sm leading-tight uppercase">Servicios Especializados en<br/>Reproducción Asistida SAS</p>
+<p class="text-xs tracking-widest text-gray-500">AUDITORÍA 2025</p>
+</div>
+<i class="fa-solid fa-flask text-2xl text-red-500"></i>
+</div>
+</header>
+<!-- Main Content -->
+<main class="content-area">
+<div class="main-column">
+<!-- Finding Description -->
+<div class="finding-box">
+<div class="risk-badge-large">Riesgo Alto</div>
+<div>
+<h2 class="text-xl font-bold text-gray-800 mb-3 flex items-center">
+<i class="fa-solid fa-triangle-exclamation text-red-500 mr-3"></i>
+                            Evidencia de Auditoría
+                        </h2>
+<div class="context-text">
+<p><strong>Aclaración Sustancial:</strong> Por su sustancia económica este ítem no debe ser considerado Inventario en los EEFF. Es un intangible que consumen los pacientes y se usa el módulo para control de precios y costo de ventas.</p>
+</div>
+<p class="text-gray-600 mb-4 leading-relaxed text-sm">
+                            En consecuencia, se evidenciaron ajustes sin soporte técnico suficiente y saldos que no corresponden a la realidad operativa del intangible.
+                        </p>
+</div>
+<div class="grid grid-cols-3 gap-3">
+<div class="data-point">
+<p class="text-xs text-gray-500 uppercase font-bold mb-1">Ajustes sin Conciliación</p>
+<p class="highlight-figure">$79.0 M</p>
+<p class="text-xs text-red-400 mt-1">Sin soporte técnico</p>
+</div>
+<div class="data-point">
+<p class="text-xs text-gray-500 uppercase font-bold mb-1">Saldo Improcedente</p>
+<p class="highlight-figure">$7.5 M</p>
+<p class="text-xs text-red-400 mt-1">Acumulado irreal</p>
+</div>
+<div class="data-point flex flex-col justify-center">
+<p class="text-xs text-gray-500 uppercase font-bold mb-1">Control Módulo</p>
+<div class="flex justify-center items-center gap-2 text-gray-400 text-sm">
+<i class="fa-solid fa-robot"></i>
+<i class="fa-solid fa-arrow-right text-xs"></i>
+<i class="fa-solid fa-power-off text-red-500 text-lg"></i>
+</div>
+<p class="text-xs text-gray-500 mt-1 font-medium">Desactivado</p>
+</div>
+</div>
+</div>
+<!-- Impacts -->
+<div>
+<h3 class="text-sm font-bold text-gray-500 uppercase tracking-widest mb-2 pl-1">Impacto Gerencial</h3>
+<div class="impact-grid">
+<div class="impact-card">
+<div class="flex items-center gap-2">
+<div class="icon-circle"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+<p class="font-bold text-sm text-gray-800">Riesgo Fiscal</p>
+</div>
+<p class="text-xs text-gray-600 leading-tight">Diferencias patrimoniales no justificadas ante entes de control.</p>
+</div>
+<div class="impact-card">
+<div class="flex items-center gap-2">
+<div class="icon-circle"><i class="fa-solid fa-box-open"></i></div>
+<p class="font-bold text-sm text-gray-800">Inventario Irreal</p>
+</div>
+<p class="text-xs text-gray-600 leading-tight">Existencia en libros de intangibles ya consumidos.</p>
+</div>
+<div class="impact-card">
+<div class="flex items-center gap-2">
+<div class="icon-circle"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+<p class="font-bold text-sm text-gray-800">Cobros Indebidos</p>
+</div>
+<p class="text-xs text-gray-600 leading-tight">Posibles fugas en facturación de servicios de laboratorio.</p>
+</div>
+<div class="impact-card">
+<div class="flex items-center gap-2">
+<div class="icon-circle"><i class="fa-solid fa-hospital-user"></i></div>
+<p class="font-bold text-sm text-gray-800">Trazabilidad Paciente</p>
+</div>
+<p class="text-xs text-gray-600 leading-tight">Debilidad en el rastro del consumo específico por paciente.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Recommendation Column -->
+<div class="side-column">
+<div class="recommendation-box">
+<div class="flex items-center gap-3 mb-4 border-b border-green-200 pb-3">
+<div class="w-10 h-10 rounded-full bg-green-100 text-green-600 flex items-center justify-center text-lg">
+<i class="fa-solid fa-check-double"></i>
+</div>
+<h3 class="text-lg font-bold text-green-800">Acciones Correctivas</h3>
+</div>
+<div class="space-y-4 flex-1 overflow-y-auto">
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-green-200 text-green-700 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">1</div>
+<p class="text-sm text-gray-700 leading-snug"><strong>Reactivar control automatizado</strong> por paciente en el sistema.</p>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-green-200 text-green-700 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">2</div>
+<p class="text-sm text-gray-700 leading-snug">Establecer <strong>conciliaciones mensuales obligatorias</strong> con compras autorizadas y vigilar costos unitarios.</p>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-green-200 text-green-700 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">3</div>
+<p class="text-sm text-gray-700 leading-snug"><strong>Depurar saldos acumulados</strong> improcedentes (Meta: saldo cero al cierre).</p>
+</div>
+<div class="flex items-start gap-3">
+<div class="w-6 h-6 rounded-full bg-green-200 text-green-700 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">4</div>
+<p class="text-sm text-gray-700 leading-snug">Reclasificar <strong>remisiones en tránsito</strong> pendientes a cuentas por cobrar temporales del paciente.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer-bar">
+<p>Informe Revisoría Fiscal 2025</p>
+<div class="flex items-center gap-2">
+<i class="fa-solid fa-circle-exclamation text-red-500"></i>
+<span class="font-bold text-red-600">Acción Inmediata Requerida</span>
+<span class="ml-4 font-mono">Página 7</span>
+</div>
+</footer>
+</div>
+</body>
+</html>

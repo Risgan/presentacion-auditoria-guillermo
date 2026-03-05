@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Resumen Ejecutivo - Servicios Especializados en Reproducción Asistida SAS</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            overflow: hidden;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .header-bar {
+            height: 100px;
+            padding: 0 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            border-bottom: 4px solid #1e3a8a;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: #1e3a8a;
+        }
+        .content-area {
+            flex: 1;
+            padding: 2rem 3rem;
+            display: flex;
+            gap: 2rem;
+        }
+        .col-left {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .col-right {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .kpi-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            border-left: 6px solid #e5e7eb;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+        .kpi-card.risk-high {
+            border-left-color: #ef4444;
+            background-color: #fef2f2;
+        }
+        .kpi-card.risk-medium {
+            border-left-color: #f59e0b;
+            background-color: #fffbeb;
+        }
+        .kpi-card.risk-low {
+            border-left-color: #10b981;
+            background-color: #ecfdf5;
+        }
+        .risk-map-container {
+            background-color: #f8fafc;
+            border-radius: 16px;
+            padding: 2rem;
+            border: 1px solid #e2e8f0;
+            flex: 1;
+        }
+        .risk-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1.25rem;
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        .traffic-light {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin-right: 1rem;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        }
+        .bg-traffic-red { background-color: #ef4444; box-shadow: 0 0 8px rgba(239, 68, 68, 0.6); }
+        .bg-traffic-yellow { background-color: #f59e0b; box-shadow: 0 0 8px rgba(245, 158, 11, 0.6); }
+        .bg-traffic-green { background-color: #10b981; box-shadow: 0 0 8px rgba(16, 185, 129, 0.6); }
+        
+        .footer-bar {
+            height: 40px;
+            background-color: #f3f4f6;
+            display: flex;
+            align-items: center;
+            padding: 0 3rem;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            color: #6b7280;
+        }
+        .badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Header -->
+<header class="header-bar">
+<div>
+<h1 class="text-3xl font-bold text-gray-800">Resumen Ejecutivo</h1>
+<p class="text-blue-600 font-medium">Estado de Situación Financiera y Operativa 2025</p>
+</div>
+<div class="logo-area">
+<i class="fa-solid fa-hospital-user text-3xl"></i>
+<div class="text-right">
+<p class="font-bold text-sm leading-tight uppercase">Servicios Especializados en<br/>Reproducción Asistida SAS</p>
+<p class="text-xs tracking-widest text-gray-500 mt-1">AUDITORÍA 2025</p>
+</div>
+</div>
+</header>
+<!-- Main Content -->
+<main class="content-area">
+<!-- Left Column: Financial KPIs -->
+<div class="col-left">
+<h2 class="text-lg font-bold text-gray-700 uppercase tracking-wide border-b pb-2 mb-1">
+<i class="fa-solid fa-chart-line mr-2"></i>Indicadores Clave
+                </h2>
+<!-- KPI 1: Patrimonio (Critical) -->
+<div class="kpi-card risk-high">
+<div class="flex justify-between items-start mb-2">
+<div style="flex:1;">
+<p class="text-sm font-bold text-red-800 uppercase mb-2">Patrimonio Neto / Pérd. Acumuladas</p>
+<div style="display:flex; align-items:baseline; gap:1.5rem;">
+    <div style="display:flex; flex-direction:column; align-items:flex-start;">
+        <span style="font-size:1.6rem; font-weight:900; color:#dc2626; line-height:1;">-$149M</span>
+        <span style="font-size:0.62rem; color:#9ca3af; font-weight:700; text-transform:uppercase; letter-spacing:0.05em;">Patrimonio</span>
+    </div>
+    <div style="display:flex; flex-direction:column; align-items:flex-start;">
+        <span style="font-size:1.6rem; font-weight:900; color:#dc2626; line-height:1;">$1.766M</span>
+        <span style="font-size:0.62rem; color:#9ca3af; font-weight:700; text-transform:uppercase; letter-spacing:0.05em;">Acumulado</span>
+    </div>
+</div>
+</div>
+<div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center text-red-600" style="flex-shrink:0;">
+<i class="fa-solid fa-triangle-exclamation text-xl"></i>
+</div>
+</div>
+<p class="text-sm text-red-800 font-medium">
+                        Patrimonio negativo por pérdidas acumuladas. Riesgo material de negocio en marcha.
+                    </p>
+</div>
+<!-- KPI 2: EBITDA (Positive) -->
+<div class="kpi-card risk-low">
+<div class="flex justify-between items-start mb-2">
+<div>
+<p class="text-sm font-bold text-green-800 uppercase">EBITDA 2025</p>
+<p class="text-3xl font-extrabold text-green-600">Positivo</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+<i class="fa-solid fa-arrow-trend-up text-xl"></i>
+</div>
+</div>
+<p class="text-sm text-green-800 font-medium">
+                        Recuperación operativa frente a 2024. Crecimiento sostenido de ingresos.
+                    </p>
+</div>
+<!-- KPI 3: Liquidez (Medium) -->
+<div class="kpi-card risk-medium">
+<div class="flex justify-between items-start mb-2">
+<div>
+<p class="text-sm font-bold text-yellow-800 uppercase">Liquidez Corriente</p>
+<p class="text-2xl font-extrabold text-yellow-600">Restringida</p>
+</div>
+<div class="w-10 h-10 rounded-full bg-yellow-100 flex items-center justify-center text-yellow-600">
+<i class="fa-solid fa-coins text-xl"></i>
+</div>
+</div>
+<p class="text-sm text-yellow-800 font-medium">
+                        Suficiente para operación diaria, insuficiente para pasivos históricos.
+                    </p>
+</div>
+</div>
+<!-- Right Column: Operational Context & Risk Map -->
+<div class="col-right">
+<!-- Context Section -->
+<div class="bg-blue-50 p-6 rounded-xl border border-blue-100 mb-2">
+<h3 class="text-blue-900 font-bold mb-3 flex items-center">
+<i class="fa-solid fa-circle-info mr-2"></i>Contexto Operativo &amp; Tecnológico
+                    </h3>
+<p class="text-gray-700 text-sm leading-relaxed mb-3">
+                        La Compañía mantiene <strong>indicadores financieros negativos</strong> a nivel patrimonial y de resultados acumulados. No obstante, el crecimiento sostenido de ingresos en el último ejercicio la ha acercado a su <strong>punto de equilibrio operativo</strong>, aunque la carga de pérdidas históricas preserva el esquema de riesgo crítico.
+                    </p>
+<p class="text-gray-700 text-sm leading-relaxed">
+                        Se evidencia una <strong>mejora en el EBITDA</strong>, impulsada por la depreciación de activos que genera recursos internos disponibles para tesorería, fortaleciendo la capacidad de maniobra operativa. El ERP vigente con <strong>más de 10 años de operación</strong> representa una obsolescencia funcional que limita el cumplimiento regulatorio (RIPS/Facturación). Se suma la <strong>ausencia de controles informáticos</strong> que obliguen a respetar el flujo logístico del módulo: actualmente es posible registrar movimientos directamente desde contabilidad, eludiendo los controles de almacén, compras y consumo, lo que compromete la integridad y trazabilidad de la información.
+                    </p>
+</div>
+<!-- Visual Risk Map -->
+<div class="risk-map-container">
+<h3 class="text-gray-700 font-bold mb-4 uppercase tracking-wider text-sm">
+                        Mapa de Riesgos Estructurales
+                    </h3>
+<!-- Strategic Risk -->
+<div class="risk-item border-l-4 border-red-500">
+<div class="traffic-light bg-traffic-red"></div>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-1">
+<p class="font-bold text-gray-800">Riesgo Estratégico</p>
+<span class="badge bg-red-100 text-red-700">Crítico</span>
+</div>
+<p class="text-xs text-gray-500">Continuidad de negocio condicionada a capitalización.</p>
+</div>
+</div>
+<!-- Operational Risk -->
+<div class="risk-item border-l-4 border-red-500">
+<div class="traffic-light bg-traffic-red"></div>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-1">
+<p class="font-bold text-gray-800">Riesgo Operativo &amp; Tecnológico</p>
+<span class="badge bg-red-100 text-red-700">Crítico</span>
+</div>
+<p class="text-xs text-gray-500">ERP obsoleto, control de inventarios débil, ciberseguridad datos sensibles.</p>
+</div>
+</div>
+<!-- Financial Risk -->
+<div class="risk-item border-l-4 border-yellow-400">
+<div class="traffic-light bg-traffic-yellow"></div>
+<div class="flex-1">
+<div class="flex justify-between items-center mb-1">
+<p class="font-bold text-gray-800">Riesgo Financiero / Tesorería</p>
+<span class="badge bg-yellow-100 text-yellow-700">Medio</span>
+</div>
+<p class="text-xs text-gray-500">Partidas conciliatorias pendientes, subregistro potencial.</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer-bar">
+<p>Informe Revisoría Fiscal 2025</p>
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-red-500"></span>
+<span class="w-2 h-2 rounded-full bg-yellow-400"></span>
+<span class="w-2 h-2 rounded-full bg-green-500"></span>
+<span class="ml-2 font-mono">Página 3</span>
+</div>
+</footer>
+</div>
+</body>
+</html>

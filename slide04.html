@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>I. Evaluación de Negocio en Marcha</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f4f6;
+            overflow: hidden;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .header-bar {
+            height: 90px;
+            padding: 0 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            border-bottom: 4px solid #b91c1c; /* Darker Red for Strategic */
+            flex-shrink: 0;
+        }
+        .content-area {
+            flex: 1;
+            padding: 2rem 3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            position: relative;
+        }
+        .top-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            height: 55%;
+        }
+        .bottom-section {
+            height: 40%;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-box {
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        .risk-card {
+            background-color: white;
+            border: 1px solid #fecaca;
+            border-left: 6px solid #ef4444;
+        }
+        .mitigant-card {
+            background-color: white;
+            border: 1px solid #bbf7d0;
+            border-left: 6px solid #22c55e;
+        }
+        .implication-card {
+            background-color: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-top: 4px solid #475569;
+            border-radius: 12px;
+            padding: 1.25rem 2rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .highlight-figure-negative {
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: #b91c1c;
+            line-height: 1;
+        }
+        .highlight-figure-positive {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #15803d;
+        }
+        .risk-badge-strategic {
+            background-color: #7f1d1d;
+            color: white;
+            padding: 0.25rem 1rem;
+            border-radius: 4px;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.05em;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+        .icon-circle-small {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            margin-right: 0.75rem;
+            flex-shrink: 0;
+        }
+        .footer-bar {
+            height: 40px;
+            background-color: #f3f4f6;
+            display: flex;
+            align-items: center;
+            padding: 0 3rem;
+            justify-content: space-between;
+            font-size: 0.75rem;
+            color: #6b7280;
+            border-top: 1px solid #e5e7eb;
+        }
+        .strategy-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        .strategy-item {
+            background-color: white;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Header -->
+<header class="header-bar">
+<div>
+<div class="flex items-center gap-3 mb-1">
+<span class="bg-red-800 text-white text-xs font-bold px-2 py-1 rounded uppercase tracking-wider">I. HALLAZGO</span>
+<h1 class="text-3xl font-bold text-gray-800">Evaluación de Negocio en Marcha</h1>
+</div>
+<p class="text-red-800 font-medium text-sm">Análisis de continuidad y viabilidad financiera (NIA 570)</p>
+</div>
+<div class="flex items-center gap-3 text-blue-900 opacity-80">
+<div class="text-right">
+<p class="font-bold text-sm leading-tight uppercase">Servicios Especializados en<br/>Reproducción Asistida SAS</p>
+<p class="text-xs tracking-widest text-gray-500">AUDITORÍA 2025</p>
+</div>
+<i class="fa-solid fa-scale-unbalanced text-2xl text-red-800"></i>
+</div>
+</header>
+<!-- Main Content -->
+<main class="content-area">
+<!-- Top Section: Diagnosis -->
+<div class="top-section">
+<!-- Left: Critical Situation -->
+<div class="card-box risk-card">
+<div class="flex justify-between items-start mb-2">
+<h2 class="text-xl font-bold text-gray-800 flex items-center">
+<i class="fa-solid fa-triangle-exclamation text-red-600 mr-2"></i>
+                            Situación Financiera
+                        </h2>
+<span class="risk-badge-strategic">Riesgo Estratégico</span>
+</div>
+<div class="grid grid-cols-2 gap-4 my-2">
+<div class="text-center">
+<p class="text-xs text-gray-500 uppercase font-bold mb-1">Patrimonio Negativo</p>
+<p class="highlight-figure-negative text-xl">-$149 M</p>
+</div>
+<div class="text-center">
+<p class="text-xs text-gray-500 uppercase font-bold mb-1">Pérdida Ejercicio</p>
+<p class="highlight-figure-negative text-xl">-$143 M</p>
+</div>
+</div>
+<div class="text-center mb-4">
+<p class="text-xs text-gray-500 uppercase font-bold mb-1">Pérdidas Acumuladas</p>
+<p class="highlight-figure-negative text-2xl">-$1.766 M</p>
+</div>
+<div class="space-y-2 mt-auto">
+<div class="flex items-start">
+<div class="icon-circle-small bg-red-100 text-red-600"><i class="fa-solid fa-xmark"></i></div>
+<p class="text-sm text-gray-600"><strong>Financiación Externa Nula:</strong> Acceso restringido por condiciones patrimoniales.</p>
+</div>
+<div class="flex items-start">
+<div class="icon-circle-small bg-red-100 text-red-600"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+<p class="text-sm text-gray-600"><strong>Dependencia Crítica:</strong> Continuidad sujeta al respaldo de la Matriz.</p>
+</div>
+</div>
+</div>
+<!-- Right: Mitigating Factors -->
+<div class="card-box mitigant-card">
+<h2 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+<i class="fa-solid fa-shield-heart text-green-600 mr-2"></i>
+                        Hechos Mitigantes
+                    </h2>
+<div class="grid grid-cols-2 gap-4 mb-4">
+<div class="bg-green-50 rounded-lg p-3 text-center border border-green-100">
+<p class="text-xs text-gray-500 uppercase font-bold">Ingresos 2023-2025</p>
+<div class="text-green-600 text-2xl mb-1"><i class="fa-solid fa-chart-line"></i></div>
+<p class="font-bold text-gray-700 text-sm">Crecimiento Sostenido</p>
+</div>
+<div class="bg-green-50 rounded-lg p-3 text-center border border-green-100">
+<p class="text-xs text-gray-500 uppercase font-bold">Resultado 2025</p>
+<div class="text-green-600 text-2xl mb-1"><i class="fa-solid fa-plus"></i></div>
+<p class="font-bold text-gray-700 text-sm">EBITDA Positivo</p>
+</div>
+</div>
+<div class="mt-auto bg-green-50 p-4 rounded-lg border border-green-100 flex items-start">
+<div class="icon-circle-small bg-white text-green-600 border border-green-200"><i class="fa-solid fa-check"></i></div>
+<div>
+<p class="text-sm font-bold text-gray-800">Flujo Operativo Suficiente</p>
+<p class="text-xs text-gray-600 mt-1">Permite atender obligaciones de corto plazo, aunque insuficiente para revertir pérdidas acumuladas.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Section: Implications -->
+<div class="bottom-section">
+<div class="implication-card">
+<h3 class="text-lg font-bold text-gray-700 mb-2 flex items-center">
+<i class="fa-solid fa-gavel text-slate-600 mr-2"></i>
+                        Implicaciones para los Accionistas
+                    </h3>
+<p class="text-sm text-gray-500 mb-4">La recuperación patrimonial está sujeta a la generación sostenida de utilidades en múltiples ejercicios futuros.</p>
+<div class="strategy-grid">
+<div class="strategy-item">
+<div class="text-slate-500 text-xl"><i class="fa-solid fa-hourglass-half"></i></div>
+<div>
+<p class="text-sm font-bold text-gray-800">Retorno a Largo Plazo</p>
+<p class="text-xs text-gray-500 mt-1">Proyección extendida en el tiempo.</p>
+</div>
+</div>
+<div class="strategy-item">
+<div class="text-slate-500 text-xl"><i class="fa-solid fa-sack-dollar"></i></div>
+<div>
+<p class="text-sm font-bold text-gray-800">Fortalecimiento</p>
+<p class="text-xs text-gray-500 mt-1">Necesidad de fortalecimiento patrimonial.</p>
+</div>
+</div>
+<div class="strategy-item">
+<div class="text-slate-500 text-xl"><i class="fa-solid fa-chess-knight"></i></div>
+<div>
+<p class="text-sm font-bold text-gray-800">Decisión Estratégica</p>
+<p class="text-xs text-gray-500 mt-1">Capitalización o reestructuración financiera.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="footer-bar">
+<p>Informe Revisoría Fiscal 2025</p>
+<div class="flex items-center gap-2">
+<i class="fa-solid fa-circle-exclamation text-red-800"></i>
+<span class="font-bold text-red-900">Alerta Estratégica</span>
+<span class="ml-4 font-mono">Página 4</span>
+</div>
+</footer>
+</div>
+</body>
+</html>

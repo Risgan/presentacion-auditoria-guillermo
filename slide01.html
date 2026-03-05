@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Portada Informe Auditoría</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #f3f4f6;
+        }
+        .slide-container {
+            width: 1280px;
+            height: 720px;
+            display: flex;
+            background-color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        .sidebar {
+            width: 35%;
+            background-color: #1e3a8a; /* Corporate Blue */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 3rem;
+            position: relative;
+        }
+        .sidebar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 10px;
+            height: 100%;
+            background-color: #3b82f6; /* Lighter Corporate Blue Accent */
+        }
+        .main-content {
+            width: 65%;
+            padding: 4rem 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .risk-badge {
+            background-color: white;
+            color: #1f2937;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+        .risk-level {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+        .traffic-light {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #e5e7eb;
+        }
+        .traffic-light.active-red {
+            background-color: #ef4444;
+            box-shadow: 0 0 10px #ef4444;
+            transform: scale(1.2);
+        }
+        .decoration-line {
+            width: 80px;
+            height: 6px;
+            background-color: #1e3a8a;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+<div class="slide-container">
+<!-- Sidebar Section -->
+<aside class="sidebar">
+<div>
+<!-- Company Logo Placeholder -->
+<div class="flex items-start gap-3 mb-12">
+<div class="bg-white text-blue-900 p-3 rounded-lg mt-1">
+<i class="fa-solid fa-hospital-user text-3xl"></i>
+</div>
+<div>
+<p class="text-xl font-bold tracking-wide leading-tight">Servicios Especializados en</p>
+<p class="text-xs text-blue-200 tracking-widest uppercase mt-1">Reproducción Asistida SAS</p>
+</div>
+</div>
+<div class="mt-10">
+<p class="text-blue-200 text-sm uppercase tracking-widest mb-2">Periodo Auditado</p>
+<p class="text-4xl font-light">Ejercicio 2025</p>
+<p class="text-xl text-blue-200 mt-1">Cierre al 31 de Diciembre</p>
+</div>
+</div>
+<!-- Risk Indicator Section in Sidebar -->
+<div class="risk-badge">
+<p class="text-xs font-bold text-gray-500 uppercase tracking-wider">Nivel de Riesgo Global</p>
+<div class="risk-level">
+<div class="flex gap-2">
+<div class="traffic-light active-red"></div>
+<div class="traffic-light"></div>
+<div class="traffic-light"></div>
+</div>
+<p class="text-red-600 font-bold text-xl">ALTO</p>
+</div>
+<p class="text-xs text-gray-500 mt-2 border-t pt-2 border-gray-200">
+                    Factores críticos en inventarios y sistemas de información.
+                </p>
+</div>
+<div class="text-xs text-blue-200 opacity-60">
+<p>Confidencialidad: Uso exclusivo interno corporativo</p>
+</div>
+</aside>
+<!-- Main Content Section -->
+<main class="main-content">
+<div class="flex-1 flex flex-col justify-center">
+<div class="decoration-line"></div>
+<p class="text-gray-500 text-lg uppercase tracking-widest font-medium mb-4">Memorando del Revisor Fiscal</p>
+<h1 class="text-5xl font-extrabold text-gray-900 leading-tight mb-6">
+                    Informe de Auditoría<br/>
+<span class="text-blue-800">Cierre de Estados Financieros</span>
+</h1>
+<div class="mb-12">
+<p class="text-gray-600 text-xl mb-1">Dirigido a la</p>
+<p class="text-2xl font-semibold text-gray-800">Asamblea de Accionistas</p>
+</div>
+<div class="grid grid-cols-2 gap-8 border-t border-gray-200 pt-8">
+<div>
+<p class="text-sm text-gray-400 uppercase font-bold mb-2">Revisor Fiscal</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center text-gray-600">
+<i class="fa-solid fa-user-tie"></i>
+</div>
+<div>
+<p class="font-bold text-gray-800">Guillermo A. Celemín Chacón</p>
+<p class="text-xs text-gray-500">MP.33358-T</p>
+</div>
+</div>
+</div>
+<div>
+<p class="text-sm text-gray-400 uppercase font-bold mb-2">Alcance de Revisión</p>
+<p class="text-sm text-gray-600 leading-relaxed">
+<i class="fa-solid fa-check text-blue-600 mr-1"></i> Estados Financieros<br/>
+<i class="fa-solid fa-check text-blue-600 mr-1"></i> Control Interno (NIA)<br/>
+<i class="fa-solid fa-check text-blue-600 mr-1"></i> Procesos Críticos
+                        </p>
+</div>
+</div>
+</div>
+<div class="flex justify-between items-center pt-8 border-t border-gray-100">
+<p class="text-xs text-gray-400">Generado el 05 de Marzo de 2026</p>
+<div class="flex gap-2">
+<div class="h-1 w-12 bg-red-500 rounded"></div>
+<div class="h-1 w-8 bg-yellow-400 rounded"></div>
+<div class="h-1 w-4 bg-green-500 rounded"></div>
+</div>
+</div>
+</main>
+</div>
+</body>
+</html>
